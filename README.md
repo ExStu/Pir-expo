@@ -15,7 +15,3 @@
   - Tabs
 
 ## Deployed version => [Visit](https://regtour.pirexpo.com/)
-
-## Previews:
-![image](https://user-images.githubusercontent.com/109738127/228364813-fb531880-ce96-4bee-91e2-1a1d88385664.png) ![image](https://user-images.githubusercontent.com/109738127/228364835-ed29f74a-c8d5-405f-993a-439aaef31307.png)
-

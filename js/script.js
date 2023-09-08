@@ -9,6 +9,21 @@ window.addEventListener('DOMContentLoaded', function () {
     var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
   })(window,document,'https://cdn-ru.bitrix24.ru/b8834481/crm/site_button/loader_17_y0l57y.js');
 
+  // animation on scroll
+
+  // const observer = new IntersectionObserver((entries) => {
+  //   entries.forEach((entry) => {
+  //     if(entry.isIntersecting) {
+  //       entry.target.classList.add('show');
+  //     } else {
+  //       entry.target.classList.remove('show');
+  //     }
+  //   });
+  // });
+
+  // const hiddenElements = document.querySelectorAll('.hidden-initial');
+  // hiddenElements.forEach((el) => observer.observe(el));
+
   // smooth scroll
 
   const anchors = document.querySelectorAll('a[href*="#"]')
@@ -179,7 +194,7 @@ window.addEventListener('DOMContentLoaded', function () {
   const container = document.querySelector(".swiper-container")
   const swiper1 = new Swiper('.places__swiper', {
     slidesPerView: 3,
-    loop: true,
+    // loop: true,
     // grabCursor: true,
     spaceBetween: 20,
     direction: 'horizontal',
@@ -211,7 +226,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   const swiper2 = new Swiper('.speakers__swiper', {
     slidesPerView: 4,
-    loop: true,
+    // loop: true,
     grabCursor: true,
     spaceBetween: 24,
     direction: 'horizontal',
@@ -245,7 +260,7 @@ window.addEventListener('DOMContentLoaded', function () {
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
-    loop: true,
+    // loop: true,
     autoplay: {
       delay: 2200,
     },
@@ -258,7 +273,7 @@ window.addEventListener('DOMContentLoaded', function () {
       slideShadows: true,
     },
     breakpoints: {
-      578: {
+      898: {
         slidesPerView: 2,
       },
       0: {
@@ -267,6 +282,7 @@ window.addEventListener('DOMContentLoaded', function () {
     },
     pagination: {
       el: '.swiper-pagination3',
+      type: 'fraction',
       clickable: 'true',
     },
     navigation: {
@@ -314,7 +330,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   const swiper6 = new Swiper('.hotels-swiper', {
     slidesPerView: 3,
-    loop: true,
+    // loop: true,
     // grabCursor: true,
     spaceBetween: 20,
     direction: 'horizontal',
@@ -346,7 +362,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   const swiper7 = new Swiper('.restaurants-swiper', {
     slidesPerView: 3,
-    loop: true,
+    // loop: true,
     // grabCursor: true,
     spaceBetween: 20,
     direction: 'horizontal',
@@ -378,7 +394,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   const swiper8 = new Swiper('.other-swiper', {
     slidesPerView: 3,
-    loop: true,
+    // loop: true,
     // grabCursor: true,
     spaceBetween: 20,
     direction: 'horizontal',
@@ -407,6 +423,33 @@ window.addEventListener('DOMContentLoaded', function () {
       }
     }
   });
+
+  const swiper9 = new Swiper('.reviews__swiper', {
+    slidesPerView: 1.5,
+    // loop: true,
+    // grabCursor: true,
+    spaceBetween: 33,
+    direction: 'horizontal',
+    autoplay: {
+      delay: 2200,
+    },
+    pagination: {
+      el: '.swiper-pagination9',
+      clickable: 'true',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next9',
+      prevEl: '.swiper-button-prev9',
+    },
+    breakpoints: {
+      999: {
+        slidesPerView: '1.5'
+      },
+      0: {
+        slidesPerView: '1'
+      },
+    }
+  })
 
   // hero bg
 

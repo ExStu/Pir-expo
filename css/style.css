@@ -180,6 +180,23 @@ body {
   bottom: 100px;
 }
 
+/* .hidden-initial {
+  opacity: 0;
+  filter: blur(1px);
+  transition: all 1s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+} */
+
+/* @media(prefers-reduced-motion) {
+  .hidden-initial {
+    transition: none;
+  }
+} */
+
 /* header */
 
 .header__wrapper {
@@ -424,15 +441,22 @@ body {
     linear-gradient(0deg, rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.3) 0%), url(../img/projects-kaliningrad.webp);
 }
 
+.projects-list__item--tumen {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.3) 0%), url(../img/tumen-main.webp);
+}
+
 .projects-list__item--altay {
   background-image:
     linear-gradient(0deg, rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.3) 0%), url(../img/projects-altay.webp);
 }
 
 .projects__list {
-  display: flex;
-  flex-wrap: wrap;
-  /* gap: var(--gap); */
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--gap);
 }
 
 .projects-list__item {
@@ -440,7 +464,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; */
-  width: calc((100% - (var(--gap) * 2)) / 3);
+  /* width: calc((100% - (var(--gap) * 2)) / 3); */
   /* min-height: 395px; */
   max-height: 395px;
   overflow: hidden;
@@ -452,10 +476,14 @@ body {
   transition: background-size .3s ease-in-out;
   /* z-index: 2; */
 }
-
-.projects-list__item:not(:last-child) {
+/*
+.projects-list__item {
   margin-right: 20px;
 }
+
+.projects-list__item:not(:nth-child(3n)) {
+  margin-bottom: 20px;
+} */
 
 /* .projects-list__item img {
   z-index: ;
@@ -776,13 +804,23 @@ body {
 .hero__bg {
   display: inline-block;
   position: absolute;
-  top: 0;
   object-fit: cover;
   width: 100%;
-  /* height: 100%; */
   overflow: hidden;
   border-radius: 0 0 100px 100px;
   z-index: -1;
+}
+
+.hero__buryatia .hero__bg {
+  top: -88px;
+}
+
+.hero__kaliningrad .hero__bg {
+  top: -88px;
+}
+
+.hero__tumen .hero__bg {
+  top: 0;
 }
 
 .hero__bg img {
@@ -1352,7 +1390,7 @@ video {
 
 .cost__ticket {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 20px;
   padding: 40px 50px;
@@ -1361,6 +1399,8 @@ video {
 }
 
 .cost__price {
+  display: block;
+  margin-right: 84px;
   font-weight: 800;
   font-size: 50px;
   line-height: 59px;
@@ -1686,6 +1726,120 @@ video {
     linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/k-places-20.webp);
 }
 
+/* tumen imgs */
+
+.tumen-places .places-list__img--first {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-1.webp);
+}
+
+.tumen-places .places-list__img--second {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-2.webp);
+}
+
+.tumen-places .places-list__img--third {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-3.webp);
+}
+
+.tumen-places .places-list__img--four {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-4.webp);
+}
+
+.tumen-places .places-list__img--five {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-5.webp);
+}
+
+.tumen-places .places-list__img--six {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-6.webp);
+}
+
+.tumen-places .places-list__img--seven{
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-7.webp);
+}
+
+.tumen-places .places-list__img--eight {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-8.webp);
+}
+
+.tumen-places .places-list__img--nine {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-9.webp);
+}
+
+.tumen-places .places-list__img--ten {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-10.webp);
+}
+
+.tumen-places .places-list__img--eleven {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-11.webp);
+}
+
+.tumen-places .places-list__img--twelve {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-12.webp);
+}
+
+.tumen-places .places-list__img--thirteen {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-13.webp);
+}
+
+.tumen-places .places-list__img--fourteen {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-14.webp);
+}
+
+.tumen-places .places-list__img--fifteen {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-15.webp);
+}
+
+.tumen-places .places-list__img--sixteen {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-16.webp);
+}
+
+.tumen-places .places-list__img--seventeen {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-1.webp);
+}
+
+.tumen-places .places-list__img--eighteen {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-18.webp);
+}
+
+.tumen-places .places-list__img--nineteen {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-19.webp);
+}
+
+.tumen-places .places-list__img--twenty {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-20.webp);
+}
+.tumen-places .places-list__img--twenty-one {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-21.webp);
+}
+.tumen-places .places-list__img--twenty-two {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-22.webp);
+}
+.tumen-places .places-list__img--twenty-three {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5) 0%), url(../img/t-places-23.webp);
+}
+
 .places-tabs__content {
   display: none;
 }
@@ -1867,10 +2021,13 @@ video {
 }
 
 .partners__list {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--gap);
   /* justify-content: space-around; */
 }
 
@@ -1878,12 +2035,12 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: calc((100% - (var(--gap) * 3)) / 4);
+  /* width: calc((100% - (var(--gap) * 3)) / 4); */
 }
 
-.partners-list__item:not(:nth-last-child(-n + 3)) {
+/* .partners-list__item:not(:nth-last-child(-n + 4)) {
   margin-bottom: 60px;
-}
+} */
 
 .partners-list__link {
   outline: none;
@@ -1916,15 +2073,15 @@ video {
 }
 
 #swiper-next-3, #swiper-prev-3 {
-  top: 114.5%;
+  top: 116%;
 }
 
 #swiper-next-3 {
-  right: 38%;
+  right: 42%;
 }
 
 #swiper-prev-3 {
-  left: 38%;
+  left: 42%;
 }
 
 /* .swiper-3d .swiper-slide-shadow-left,
@@ -1949,3 +2106,60 @@ video {
   /* width: 80%; */
   /* height: 100%; */
 /* } */
+
+.reviews {
+  padding-bottom: 68px;
+}
+
+.review {
+  max-width: 868px;
+  min-height: 361px;
+  padding: 34px 44px 34px 81px;
+  background-color: var(--color-beige);
+  border-radius: 50px;
+}
+
+.review__title {
+  font-weight: 700;
+  font-size: 18.2107px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.review__owner {
+  margin-bottom: 22px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-weight: 500;
+  font-size: 14.1639px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.review__text {
+  font-weight: 500;
+  font-size: 16.1873px;
+  line-height: 160%;
+  color: #000000;
+}
+
+.review__link {
+  font-weight: 700;
+  text-decoration: underline;
+  color: var(--color-daintree);
+}
+
+#swiper-pag-9 {
+  bottom: -55px;
+}
+
+#swiper-next-9, #swiper-prev-9 {
+  top: 111%;
+}
+
+#swiper-next-9 {
+  right: 40%;
+}
+
+#swiper-prev-9 {
+  left: 40%;
+}

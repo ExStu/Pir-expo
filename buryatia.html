@@ -126,7 +126,7 @@
           <h1 class="hero__heading title-reset">ПОЛЕЗНЫЕ КАНИКУЛЫ ОТЕЛЬЕРА</h1>
           <span class="hero__place">РЕСПУБЛИКА БУРЯТИЯ</span>
           <span class="hero__date">19–22 марта 2023</span>
-          <a href="https://b24-150f9z.bitrix24.site/crm_form_nef6a/" target="_blank" class="btn hero__link"
+          <a href="https://b24-150f9z.bitrix24.site/crm_form_nef6a/" target="_blank" class="visually-hidden btn hero__link"
             id="hero-link">Принять участие</a>
           <a href="tel:+74956379440" class="nav__phone nav__link--buryatia"
             aria-label="Ссылка на форму оформления билета на участие">
@@ -135,7 +135,7 @@
         </div>
       </div>
     </section>
-    <section class="themes">
+    <section class="themes hidden-initial">
       <div class="container">
         <h2 class="themes__title title-reset section-title">
           ТЕМЫ Дискуссий
@@ -213,7 +213,7 @@
         </ul>
       </div>
     </section>
-    <section class="invites">
+    <section class="invites hidden-initial">
       <div class="container">
         <h2 class="title-reset section-title invites__title">
           Приглашения от экспертов
@@ -519,7 +519,7 @@
         </div>
       </div>
     </section>
-    <section class="programme" id="programme">
+    <section class="programme hidden-initial" id="programme">
       <div class="container">
         <h2 class="programme__title title-reset section-title">
           ПРОГРАММА КАНИКУЛ
@@ -865,16 +865,16 @@
 
       </div>
     </section>
-    <section class="cost">
+    <!-- <section class="cost hidden-initial">
       <div class="container">
         <h2 class="title-reset cost__title section-title">
           Стоимость участия
         </h2>
         <div class="cost__ticket">
           <span class="cost__price">82&nbsp;000&nbsp;₽</span>
-          <!-- <p class="p-reset cost__desc">
+          <p class="p-reset cost__desc">
             Билет включает знакомства с&nbsp;интересными объектами размещения, гастрономией региона, общение с&nbsp;коллегами, обмен опытом, а&nbsp;также отдых в&nbsp;самых интересных туристических локациях.
-          </p> -->
+          </p>
           <div class="cost__desc">
             <h3 class="cost__subhead title-reset">Удивительная Бурятия для отельеров (4&nbsp;дня/3&nbsp;ночи,
               двухместное размещение)</h3>
@@ -893,14 +893,14 @@
             <span class="cost-list__price">+&nbsp;8&nbsp;000&nbsp;₽</span>
             <span class="cost-list__desc">Одноместное размещение</span>
           </li>
-          <!-- <li class="cost-list__item">
+          <li class="cost-list__item">
             <span class="cost-list__price">+&nbsp;0&nbsp;000&nbsp;₽</span>
             <span class="cost-list__desc">Дополнительное посещение чего-то там еще</span>
-          </li> -->
+          </li>
         </ul>
       </div>
-    </section>
-    <section class="places buryatia-places">
+    </section> -->
+    <section class="places buryatia-places hidden-initial">
       <div class="container">
         <h2 class="places__title title-reset section-title">
           Что посещаем
@@ -1157,7 +1157,8 @@
                     <h3 class="places-list__loc title-reset">Гостиница &laquo;Сагаан Морин&raquo;</h3>
                   </div>
                   <div class="places-list__wrapper">
-                    <h3 class="places-list__loc title-reset places-list__loc--tablet">Гостиница &laquo;Сагаан Морин&raquo;</h3>
+                    <h3 class="places-list__loc title-reset places-list__loc--tablet">Гостиница &laquo;Сагаан
+                      Морин&raquo;</h3>
                     <!-- <p class="p-reset places-list__desc">
                     Как&nbsp;бы то&nbsp;ни&nbsp;было, сложившаяся структура организации оказалась чрезвычайно полезной
                     </p> -->
@@ -1181,7 +1182,8 @@
                     <h3 class="places-list__loc title-reset">Апарт-отель &laquo;Тайга&raquo;</h3>
                   </div>
                   <div class="places-list__wrapper">
-                    <h3 class="places-list__loc title-reset places-list__loc--tablet">Апарт-отель &laquo;Тайга&raquo;</h3>
+                    <h3 class="places-list__loc title-reset places-list__loc--tablet">Апарт-отель &laquo;Тайга&raquo;
+                    </h3>
                     <!-- <p class="p-reset places-list__desc">
                     Как&nbsp;бы то&nbsp;ни&nbsp;было, сложившаяся структура организации оказалась чрезвычайно полезной
                     </p> -->
@@ -1202,7 +1204,7 @@
         </div>
       </div>
     </section>
-    <section class="speakers" id="speakers">
+    <section class="speakers hidden-initial" id="speakers">
       <div class="container">
         <h2 class="speakers__title title-reset section-title">
           Спикеры
@@ -1368,7 +1370,7 @@
         </ul>
       </div>
     </section>
-    <section class="partners" id="partners">
+    <section class="partners hidden-initial" id="partners">
       <div class="container">
         <h2 class="partners__title title-reset section-title">
           партнеры
@@ -1452,7 +1454,288 @@
         </ul>
       </div>
     </section>
-    <section class="contacts contacts--buryatia">
+    <section class="past hidden-initial">
+      <div class="container">
+        <h2 class="title-reset section-title past__title">
+          Как это было
+        </h2>
+        <div class="past__content">
+          <div class="swiper-container">
+            <div class="swiper past__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-1.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-2.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-3.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-4.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-5.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-6.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-7.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-8.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-9.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-10.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-11.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-12.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-13.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-14.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-15.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-16.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-17.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-18.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-19.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-20.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-21.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-22.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-23.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-24.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-25.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-26.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+                <div class="swiper-slide past__slide">
+                  <picture>
+                    <!-- <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
+                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)"> -->
+                    <img src="./img/past-27.webp" alt="Картинка еды">
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <div id="swiper-prev-3" class="swiper-button-prev swiper-button-prev3"></div>
+            <div id="swiper-next-3" class="swiper-button-next swiper-button-next3"></div>
+            <div id="swiper-pag-3" class="swiper-pagination swiper-pagination3"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="reviews hidden-initial">
+      <div class="container">
+        <h2 class="title-reset section-title past__title">
+          Отзывы
+        </h2>
+        <div class="rewiews__content">
+          <div class="swiper-container">
+            <div class="swiper reviews__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide reviews__slide">
+                  <div class="review">
+                    <h4 class="review__title title-reset">Юлия Цепилова</h4>
+                    <p class="p-reset review__owner">Гостиничная управляющая компания &laquo;Путник Менеджмент&raquo;
+                    </p>
+                    <p class="p-reset review__text">
+                      Это необычный и&nbsp;таинственный регион для начала проекта &laquo;Каникул
+                      отельера&raquo;&nbsp;&mdash; Бурятия. Мы&nbsp;(УК&nbsp;&laquo;Putnik Group&raquo; управляет двумя
+                      отелями в&nbsp;Бурятии и&nbsp;располагает собственным туроператором &laquo;Metropol
+                      Express&raquo;) были рады показать край шаманов, дацаны, ледяной Байкал, богатую местную кухню
+                      и&nbsp;традиции, совместив это с&nbsp;деловой программой. На&nbsp;&laquo;Каникулы&raquo;
+                      с&nbsp;нами отправилась команда руководителей и&nbsp;собственников разных форматов средств
+                      размещения&nbsp;&mdash; городские, загородные, апарт-отели. Это позволило программе стать более
+                      богатой, участники смогли обменяться подходами, взглянуть
+                      на&nbsp;свой бизнес за&nbsp;пределами привычных рамок, сформулировать идеи и&nbsp;вопросы.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__slide">
+                  <div class="review">
+                    <h4 class="review__title title-reset">Мария Щербакова</h4>
+                    <p class="p-reset review__owner">Отели Art Hotel&nbsp;4* и Отель &laquo;Астор&raquo;&nbsp;4* (Пермь)</p>
+                    <p class="p-reset review__text">
+                      Отличные каникулы, с&nbsp;пользой для души и&nbsp;профессионального роста. Бурятия задала высокую планку гостеприимства, другим регионам будет тяжело ее&nbsp;перепрыгнуть. Отдельное спасибо организаторам за&nbsp;образцовую программу под руководством флагмана нашей отрасли&nbsp;&mdash; ПИР! Спасибо всем участникам, с&nbsp;вами было комфортно и&nbsp;интересно. Обязательно буду участвовать в&nbsp;этом проекте.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__slide">
+                  <div class="review">
+                    <h4 class="review__title title-reset">Марина Ерусланова</h4>
+                    <p class="p-reset review__owner">Гостевой комплекс DUBKI (Санкт-Петербург)</p>
+                    <p class="p-reset review__text">
+                      Приятно было отдохнуть в&nbsp;компании интересных людей-единомышленников, узнать много нового по&nbsp;работе, открыть для себя Бурятию и&nbsp;Байкал, получить вдохновение на&nbsp;работу и&nbsp;перезагрузиться.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__slide">
+                  <div class="review">
+                    <h4 class="review__title title-reset">Виктория Мироновская</h4>
+                    <p class="p-reset review__owner">Маркетинговая компания ZERNO (Москва)</p>
+                    <p class="p-reset review__text">
+                      Полезные каникулы отельера&nbsp;&mdash; самое точное определение трипа, в&nbsp;котором мы&nbsp;приняли участие. Поездка была полезна всем, участникам каникул и&nbsp;отельерам региона, которых мы&nbsp;посетили. Они щедро делились опытом с&nbsp;нами, а&nbsp;мы&nbsp;с&nbsp;радостью давали рекомендации, делились кейсами с&nbsp;нашей стороны. В&nbsp;итоге произошел дружественный и&nbsp;полезный обмен опытом.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__slide">
+                  <div class="review">
+                    <h4 class="review__title title-reset">Елена Гузева</h4>
+                    <p class="p-reset review__owner">Комплекс апартаментов &laquo;Дюна&raquo; (Светлогорск, Калининградская область)
+                    </p>
+                    <p class="p-reset review__text">
+                      Хочется выразить своё восхищение за&nbsp;организацию данного мероприятия. Принимающая сторона отработала на&nbsp;все 100%. Вы&nbsp;все большие профессионалы. Очень познавательно, регион очень интересный, природа, Байкал все это надолго отпечатается в&nbsp;памяти. Спасибо вам огромное.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="swiper-prev-9" class="swiper-button-prev swiper-button-prev9"></div>
+            <div id="swiper-next-9" class="swiper-button-next swiper-button-next9"></div>
+            <div id="swiper-pag-9" class="swiper-pagination swiper-pagination9"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts contacts--buryatia hidden-initial">
       <div class="container">
         <h2 class="contacts__title section-title title-reset">
           Контакты
@@ -1537,102 +1820,6 @@
 
       </div>
     </section>
-    <!-- <section class="past">
-      <div class="container">
-        <h2 class="title-reset section-title past__title">
-          Как это было
-        </h2>
-        <div class="past__content">
-          <div class="swiper-container">
-            <div class="swiper past__swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide past__slide">
-                  <picture>
-                    <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
-                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)">
-                    <img src="./img/past-8.jpg" alt="Картинка еды">
-                  </picture>
-                </div>
-                <div class="swiper-slide past__slide">
-                  <picture>
-                    <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
-                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)">
-                    <img src="./img/past-8.jpg" alt="Картинка еды">
-                  </picture>
-                </div>
-                <div class="swiper-slide past__slide">
-                  <picture>
-                    <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
-                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)">
-                    <img src="./img/past-8.jpg" alt="Картинка еды">
-                  </picture>
-                </div>
-                <div class="swiper-slide past__slide">
-                  <picture>
-                    <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
-                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)">
-                    <img src="./img/past-8.jpg" alt="Картинка еды">
-                  </picture>
-                </div>
-                <div class="swiper-slide past__slide">
-                  <picture>
-                    <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
-                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)">
-                    <img src="./img/past-8.jpg" alt="Картинка еды">
-                  </picture>
-                </div>
-                <div class="swiper-slide past__slide">
-                  <picture>
-                    <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
-                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)">
-                    <img src="./img/past-8.jpg" alt="Картинка еды">
-                  </picture>
-                </div>
-                <div class="swiper-slide past__slide">
-                  <picture>
-                    <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
-                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)">
-                    <img src="./img/past-8.jpg" alt="Картинка еды">
-                  </picture>
-                </div>
-                <div class="swiper-slide past__slide">
-                  <picture>
-                    <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
-                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)">
-                    <img src="./img/past-8.jpg" alt="Картинка еды">
-                  </picture>
-                </div>
-                <div class="swiper-slide past__slide">
-                  <picture>
-                    <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
-                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)">
-                    <img src="./img/past-8.jpg" alt="Картинка еды">
-                  </picture>
-                </div>
-                <div class="swiper-slide past__slide">
-                  <picture>
-                    <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
-                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)">
-                    <img src="./img/past-8.jpg" alt="Картинка еды">
-                  </picture>
-                </div>
-                <div class="swiper-slide past__slide">
-                  <picture>
-                    <source srcset="./img/mobile-h-logo.svg" media="(max-width:480px)">
-                    <source srcset="./img/tablet-h-logo.svg" media="(max-width:1024px)">
-                    <img src="./img/past-8.jpg" alt="Картинка еды">
-                  </picture>
-                </div>
-              </div>
-            </div>
-            <div id="swiper-prev-3" class="swiper-button-prev swiper-button-prev3"></div>
-            <div id="swiper-next-3" class="swiper-button-next swiper-button-next3"></div>
-            <div id="swiper-pag-3" class="swiper-pagination swiper-pagination3"></div>
-          </div>
-
-        </div>
-      </div>
-    </section> -->
   </main>
   <footer class="footer footer-buryatia">
     <div class="container footer__container">
